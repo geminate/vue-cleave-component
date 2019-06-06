@@ -1,6 +1,6 @@
 {
-  "name": "vue-cleave-component",
-  "version": "2.1.2",
+  "name": "@geminate/vue-cleave-component",
+  "version": "1.0.0",
   "description": "Vue.js component for cleave.js",
   "main": "dist/vue-cleave.js",
   "browser": "dist/vue-cleave.min.js",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankurk91/vue-cleave-component.git"
+    "url": "git+https://github.com/geminate/vue-cleave-component.git"
   },
   "keywords": [
     "vue",
@@ -24,16 +24,15 @@
   "author": "ankurk91",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ankurk91/vue-cleave-component/issues"
+    "url": "https://github.com/geminate/vue-cleave-component/issues"
   },
-  "homepage": "https://github.com/ankurk91/vue-cleave-component",
+  "homepage": "https://github.com/geminate/vue-cleave-component",
   "scripts": {
     "test": "jest",
     "test:watch": "yarn run test -- --watch --onlyChanged --notify",
     "start": "yarn run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --config=webpack.config.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --mode production",
-    "prepublishOnly": "yarn run test && yarn run build"
+    "build": "cross-env NODE_ENV=production webpack --mode production"
   },
   "dependencies": {
     "cleave.js": "^1.4.7"
