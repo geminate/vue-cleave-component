@@ -5,7 +5,7 @@ export default {
   render(el) {
     return el('input', {
       attrs: {
-        type: 'text'
+        type: this.type
       },
       on: {
         blur: this.onBlur
@@ -29,6 +29,10 @@ export default {
     raw: {
       type: Boolean,
       default: true
+    },
+    type: {
+      type: String,
+      default: 'text'
     },
   },
   data() {
